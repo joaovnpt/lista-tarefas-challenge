@@ -1,3 +1,4 @@
+
 function adicionar() {
     let novoItem = document.createElement("li");
     let textoItem = document.getElementById("tarefa").value;
@@ -6,4 +7,8 @@ function adicionar() {
 
     let lista = document.getElementById("lista");
     lista.appendChild(novoItem);
+}
+
+function excluirTarefa() {
+    lista.removeChild(novoItem);
 }
