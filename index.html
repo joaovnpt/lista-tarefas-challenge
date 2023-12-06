@@ -8,15 +8,21 @@
 </head>
 
 <body>
-    <h2>Tarefas Pendentes</h2>
-    <input type="text" name="tarefa" id="tarefa">
-    <br>
-    <input type="button" value="Adicionar" id="adicionar" onclick="adicionar()">
-    <br>
-    <ul id="lista"></ul>
-    <input type="button" value="Excluir" onclick="excluirTarefa()">
-    <h3>Tarefas Finalizadas</h3>
-    <ul id="finalizadas"></ul>
+    <div class="lista-de-tarefas">
+        <h2>Tarefas Pendentes</h2>
+        <input type="text" name="tarefa" id="tarefa">
+        <br>
+        <input type="button" value="Adicionar" id="adicionar" onclick="adicionar()">
+        <br>
+        <div class="pendentes">
+            <ul id="lista"></ul>
+        </div>
+    </div>
+    <div class="finalizadas">
+        <h3>Tarefas Finalizadas</h3>
+        <ul id="finalizadas"></ul>
+        <input type="button" value="Limpar" onclick="limparConcluidas()">
+    </div>
     <script type="text/javascript" src="script.js"></script>
 </body>
 
