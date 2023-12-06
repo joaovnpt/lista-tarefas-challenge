@@ -1,4 +1,3 @@
-
 function adicionar() {
     let novoItem = document.createElement("li");
     let textoItem = document.getElementById("tarefa").value;
@@ -10,5 +9,11 @@ function adicionar() {
 }
 
 function excluirTarefa() {
-    lista.removeChild(novoItem);
+    let lista = document.getElementById("lista");
+    let itemParaRemover = lista.lastChild;
+
+    // Este if serve para verificar se há um item a ser removido
+    if (itemParaRemover) {
+        lista.removeChild(itemParaRemover);
+    }
 }
