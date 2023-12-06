@@ -1,0 +1,56 @@
+body {
+    background-color: #f1dedd;
+}
+
+.lista-de-tarefas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.finalizadas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+input[type="button"] {
+    background-color: #add8cf;
+    border-radius: 10px;
+    border: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    width: fit-content;
+    height: 22px;
+    transition: 75ms ease-in;
+}
+input[type="button"]:hover {
+    transform: scale(110%);
+    transition: 75ms ease-in;
+    background-color: #a5d1c8;
+}
+input[type="button"]:active {
+    transform: scale(115%);
+}
+input[type="text"] {
+    background-color: whitesmoke;
+    border: solid 2px black;
+    border-radius: 10px;
+}
+h2, h3 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+button {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(51, 160, 60);
+    border-radius: 5px;
+    border: solid black 1px;
+    color: white;
+}

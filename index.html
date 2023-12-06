@@ -5,24 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checklist</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="lista-de-tarefas">
-        <h2>Tarefas Pendentes</h2>
-        <input type="text" name="tarefa" id="tarefa">
-        <br>
-        <input type="button" value="Adicionar" id="adicionar" onclick="adicionar()">
-        <br>
-        <div class="pendentes">
-            <ul id="lista"></ul>
-        </div>
+    <h2>Tarefas Pendentes</h2>
+
+    <div class="container">
+        <input type="text" id="camporesult"> <button id="adicionar-tarefa"><span>&#10003;</span></button>
+        <h1>Tarefas incompletas:</h1>
+
     </div>
-    <div class="finalizadas">
-        <h3>Tarefas Finalizadas</h3>
-        <ul id="finalizadas"></ul>
-        <input type="button" value="Limpar" onclick="limparConcluidas()">
+
+    <div class="tasks" id="containertask">
+
     </div>
+    <hr>
+    <h1>Tarefas Completas:</h1>
+    <input id="limpar2" type="button" value="limpar"></input>
+    <div class="tarefas" id="containercompletetask">
+        <script src="script.js"></script>
     <script type="text/javascript" src="script.js"></script>
 </body>
 
