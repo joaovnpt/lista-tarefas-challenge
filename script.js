@@ -21,7 +21,7 @@ function additem() { //função de adcionar item parágrafo (tarefa)
             document.getElementById("completas-container").removeChild(tarefas); // limpa os elementos da lista de tarefas concluidas
         })
     }
-    addButton.addEventListener("click", additem) // adciona o item na lista de pendente
+    addButton.addEventListener("click", additem) // addBtton no onclick ativa a função additem: adciona o item na lista de pendente
     enterTarefa.addEventListener("keyup", function (e) { // função de adcionar o item na lista através do botão enter
         if (e.keyCode == 13) { // só chama a função quando for a tecla 13 (enter)
             additem()
